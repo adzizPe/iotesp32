@@ -1,8 +1,8 @@
 <?php
-$servername = "sql205.infinityfree.com";
-$username = "if0_37631718";
-$password = "oaxJBcXT3pxHSE";
-$dbname = "if0_37631718_lampu_db";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lampu_db";
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
