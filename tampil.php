@@ -18,15 +18,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Menampilkan data dari setiap baris
-    while($row = $result->fetch_assoc()) {
-        if ($row["status"] == 1) {
-            echo "Lampu ON";
-        } else {
-            echo "Lampu OFF";
-        }
-    }
+    $row = $result->fetch_assoc();
+    echo $row["status"];  // Mengirim status sebagai nilai numerik (1 atau 0)
 } else {
-    echo "0 results";
+    echo "0";  // Jika tidak ada hasil, kirim "0"
 }
 
 $conn->close();
