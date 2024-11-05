@@ -12,7 +12,7 @@ if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Memastikan 'tekan' ada dalam query string dan mengonversi ke nilai numerik yang benar
+
 if(isset($_GET['tekan'])) {
     $tekan = $_GET['tekan'] === '1' ? 1 : 0;
 
