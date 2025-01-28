@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "lampu_db";
+$username = "azuriumm_iot32";
+$password = "RGdX5ZGftN2UUkYvz25z";
+$dbname = "azuriumm_iot32";
 
 // Membuat koneksi
 $conn = new mysqli($servername, $username, $password, $dbname);
